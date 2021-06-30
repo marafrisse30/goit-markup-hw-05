@@ -89,16 +89,15 @@ body {
 .menu-link.current {
   color: var(--accent-color);
 }
-.menu-link.current::after{
-  content:"";
+.menu-link.current::after {
+  content: '';
   display: block;
   width: 100%;
-height: 4px;
-background-color: var(--accent-color);
-border-radius: 2px;
-margin-top: 28px;
-position: absolute;
-
+  height: 4px;
+  background-color: var(--accent-color);
+  border-radius: 2px;
+  margin-top: 28px;
+  position: absolute;
 }
 .menu-link {
   font-weight: 500;
@@ -267,16 +266,24 @@ position: absolute;
 .about-list-item:not(:last-child) {
   margin-right: 30px;
 }
-.about-list-item-image{
+.about-list-item {
   position: relative;
 }
-.about-list-item-image::after{
-   content: "десктопные приложения";
-  display: block;
-  bottom: 0;
+.about-overlay {
+  position: absolute;
   width: 100%;
-height: 70px;
-background-color: rgba(47, 48, 58, 0.8);
+  height: 70px;
+  background-color: rgba(47, 48, 58, 0.8);
+  bottom: 0;
+  padding: 27px;
+}
+.about-overlay-title {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.17;
+  color: #ffffff;
+  text-transform: uppercase;
+  text-align: center;
 }
 /* team */
 .team {
